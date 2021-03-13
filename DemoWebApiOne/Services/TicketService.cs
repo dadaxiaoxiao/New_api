@@ -1,13 +1,21 @@
 using DemoWebApiOne.IServices;
-
+using DemoWebApiOne.Entities;
 
 namespace DemoWebApiOne.Services
 {
     public class TicketService:TicketIService
     {
-        public string Query(string data)
+        public TicketQueryRequest Query(TicketQueryRequest data)
         {
-            return "成功";
+            // if(data.plant =="2")
+            // {
+            //     int a =0;
+            //     int b =1;
+            //     int c= b/a;
+            // }
+            
+        
+            return data;
         }
     }
 }

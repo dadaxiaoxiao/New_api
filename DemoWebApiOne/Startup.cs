@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Autofac;
 using DemoWebApiOne.Helper;
+using DemoWebApiOne.Entities;
 
 namespace DemoWebApiOne
 {
@@ -34,6 +35,16 @@ namespace DemoWebApiOne
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+             services.AddMvc(options =>
+            {  
+                options.Filters.Add<WebApiResultMiddleware>();
+              
+            });
+
+
+            // 注册单例
+            services.AddScoped<MultilingualLanguage>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

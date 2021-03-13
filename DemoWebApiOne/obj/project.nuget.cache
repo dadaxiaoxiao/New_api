@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "15H9cEo8JcKeW7vJzyk3zIWVKry4YHl4sbgFL4Jw8OUSX8hdcxd1umfuNmzUETKL9rx6nD3uVgmZtpO52Brimg==",
+  "dgSpecHash": "6GOOjznhIcG8biNmuPph1L6PwWhhgBdzDY4wAe/TQYp6wzV6wvVcjm7kwQHJoHR6hwQyGy72GU/PZy6KKw5f7w==",
   "success": true,
   "projectFilePath": "D:\\Code\\dotnetcode\\New_api\\DemoWebApiOne\\DemoWebApiOne.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\14263\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\14263\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
     "C:\\Users\\14263\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\14263\\.nuget\\packages\\newtonsoft.json\\13.0.1-beta1\\newtonsoft.json.13.0.1-beta1.nupkg.sha512",
     "C:\\Users\\14263\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
   ],
   "logs": []
