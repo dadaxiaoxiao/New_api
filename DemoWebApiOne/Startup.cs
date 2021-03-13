@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Autofac;
+using DemoWebApiOne.Helper;
 
 namespace DemoWebApiOne
 {
@@ -21,6 +23,12 @@ namespace DemoWebApiOne
         }
 
         public IConfiguration Configuration { get; }
+
+         // Autofac
+        public void ConfigureContainer(ContainerBuilder builder){
+            //添加依赖注入实例，AutofacModuleRegister就继承自Autofac.Module的类
+            builder.RegisterModule(new ConfigureAutofac());
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
