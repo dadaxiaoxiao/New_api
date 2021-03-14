@@ -7,12 +7,12 @@ namespace DemoWebApiOne.Services
     {
         public TicketQueryRequest Query(TicketQueryRequest data)
         {
-            // if(data.plant =="2")
-            // {
-            //     int a =0;
-            //     int b =1;
-            //     int c= b/a;
-            // }
+            if(data.plant =="2")
+            {
+                int a =0;
+                int b =1;
+                int c= b/a;
+            }
             
         
             return data;

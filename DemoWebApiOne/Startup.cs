@@ -39,6 +39,7 @@ namespace DemoWebApiOne
              services.AddMvc(options =>
             {  
                 options.Filters.Add<WebApiResultMiddleware>();
+                options.Filters.Add<ExceptionAttribute>();
               
             });
 
