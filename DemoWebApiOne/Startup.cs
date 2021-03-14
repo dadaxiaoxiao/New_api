@@ -46,6 +46,7 @@ namespace DemoWebApiOne
 
             // 注册单例
             services.AddScoped<MultilingualLanguage>();
+            services.AddScoped<SqlSugarHelp>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

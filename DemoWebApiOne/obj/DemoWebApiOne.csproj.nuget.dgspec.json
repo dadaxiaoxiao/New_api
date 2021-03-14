@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[7.1.0, )"
             },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.23, )"
+            },
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.10.0, )"
@@ -55,6 +59,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1-beta1, )"
+            },
+            "sqlSugarCore": {
+              "target": "Package",
+              "version": "[5.0.2.6, )"
             }
           },
           "imports": [
