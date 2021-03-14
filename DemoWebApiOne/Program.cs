@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using NLog.Web;
 
 namespace DemoWebApiOne
 {
@@ -22,6 +23,6 @@ namespace DemoWebApiOne
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                }).UseServiceProviderFactory(new AutofacServiceProviderFactory());
+                }).UseServiceProviderFactory(new AutofacServiceProviderFactory()).UseNLog();
     }
 }

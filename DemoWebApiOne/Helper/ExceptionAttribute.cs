@@ -17,10 +17,12 @@ namespace DemoWebApiOne.Helper
                 errorMessage = context.Exception.Message;
                 developmentMessage = context.Exception.StackTrace;
                 context.Result = new ExceptionResult(200, context.Exception);
+                NLogHelp.ErrorLog(errorMessage,context.Exception);
             } else
             {
                 errorMessage = "未知错误";
                 context.Result = new ExceptionResult(500, context.Exception);
+                NLogHelp.ErrorLog(errorMessage,context.Exception);
               
             }
 
